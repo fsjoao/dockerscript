@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  client:
+    stdin_open: true
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - "C/Users/jao/Documents/sons pc esse memo e python/dockerapi/react-docker-deploy/node_modules"
+      - "./:/home/app"
